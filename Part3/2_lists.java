@@ -4,6 +4,8 @@ import java.util.ArrayList;
 /*
   Link: https://java-programming.mooc.fi/part-3/2-lists
 
+  - NOTE: ArrayList can only store Objects.
+
   - Programming languages offer tools to assist in storing a large
     quantity of values.
   - The "ArrayList" is used for storing many values that are of the same type.
