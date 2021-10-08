@@ -1,3 +1,4 @@
+// Public key in front of a class means, this class can be used in other files
 public class Person {
   /*
     - instance variables created with keyword "private" means those variables
