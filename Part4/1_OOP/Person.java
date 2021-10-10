@@ -29,12 +29,13 @@ public class Person {
   }
 
   // Method for an object: written beneath constructor
+
+  // [Not preferable] Print persons details
   public void printPerson() {
     System.out.println(this.name + ", age " + this.age + " years");
   }
 
   public void growOlder() {
-    System.out.println("Growing older...");
     this.age = this.age + 1;
   }
 
@@ -45,4 +46,21 @@ public class Person {
 
     return true;
   }
+
+  /*
+    - We have declared a method called "printPerson".
+    - It is considered as a poor practice to do so.
+    - A preferred way is to define a method for the object that "returns" a 
+      "string representation" of the object.
+
+    - What does that mean?
+    -> The printPerson method just prints the values of the Object created.
+      Which kind of shows the Instance variables. We should use "toString()" instead
+      of this.
+  */
+  // This method will always run whenever an Object is created with this Class. 
+  public String toString() {
+    return this.name + ", age " + this.age + " years";
+  }
+
 }
