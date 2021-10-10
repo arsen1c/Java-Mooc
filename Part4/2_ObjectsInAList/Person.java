@@ -5,9 +5,9 @@ public class Person {
   private int height;
 
   // Constructor Method
-  public Person(String name) {
+  public Person(String name, int age) {
     this.name = name;
-    this.age = 0;
+    this.age = age;
     this.height = 0;
     this.weight = 0;
   }
