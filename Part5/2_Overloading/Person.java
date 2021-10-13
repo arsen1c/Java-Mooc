@@ -73,6 +73,10 @@ public class Person {
     public void growOlder(int years) {
       this.age = this.age + years;
     }
+    /*
+        - Now A Perosn has two methods, both called "growOlder".
+        - The one that gets executred depends on the number of parameters provided.
+    */
 
     public boolean isAdult() {
         if (this.age < 18) {
@@ -82,14 +86,8 @@ public class Person {
         return true;
     }
 
-    public double bodyMassIndex() {
-        double heightInMeters = this.height / 100.0;
-
-        return this.weight / (heightInMeters * heightInMeters);
-    }
-
     public String toString() {
-        return this.name + " is " + this.age + " years old, their BMI is " + this.bodyMassIndex();
+        return this.name + " is " + this.age + " years old";
     }
 
     public void setHeight(int height) {

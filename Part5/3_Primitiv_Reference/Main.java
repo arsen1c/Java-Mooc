@@ -1,0 +1,66 @@
+// Link: https://java-programming.mooc.fi/part-5/3-primitive-and-reference-variables
+
+class Main {
+  public static void main(String[] args) {
+    // primitive "int" variable and the number 10 is store as its value.0
+    int value = 10;
+    System.out.println(value); // prints 10
+
+    // we create a reference variable called "luke"
+    // a reference to an object is returned by the constructor of the "Name" class when we call it.
+    // this reference is stored as the value of the variable.
+    Name luke = new Name("Luke");
+    System.out.println(luke); // Name@4aa298b7
+
+    /*
+      - When we call "System.out.println()", it prints the valeu of the variable.
+      - The value of a primitive variable is concerete, whereas the value of the reference variable is a
+        reference.
+      
+      - When we attempt to print the value of a rerefence variable, the output contains the type of the variable
+        and an identifier created for it by Java.
+      - Name@4aa298b7 -> Type@Identifier
+
+
+      [+] Primitive Variables [+]
+        - Java has 8 primitive variables.
+          + boolean (true or false)
+          + byte - 8bits, between -128 and 127
+          + char - 16bits
+          + shot - 16bits, between -32768 and 32767
+          + int - 32bits, between -2^31 and 2*31 - 1
+          + long - 64-bits, between -2^63 and 2^63 - 1
+          + float - 32-bits
+          + double - 64-bits  
+      
+      - Declaring primitive variable causes the computer to reserver some memory where the value assigned
+        to the variable can be stored.
+      - The size of the storage container reserved depends on type of the primitve.
+    */
+  }
+
+  public static void primitveTypes() {
+    int first = 10;
+    int second = first;
+    int third = second;
+
+    System.out.println(first + " " + second + " " + third); // 10 10 10
+    second = 5;
+    System.out.println(first + " " + second + " " + third); // 10 5 10
+
+    /*
+      - The name of the variable tells the memory location where its value is stored.
+      - When you assign a value to a primitve variable with a equility sign, the value on the right
+        side is copied to the memory location indicated by thename of the variable.
+
+      - the "int first = 10" reserves a location called "first" for the variable and then copies the
+        value "10" into it.
+
+      - Similarly "int second = first" reserves a location in memory called "second" for the variable 
+        being created and then copies into it the values stored in the location of variable "first" &first
+    
+      
+
+    */
+  }
+}

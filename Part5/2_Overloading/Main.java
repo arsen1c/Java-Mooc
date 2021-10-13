@@ -17,6 +17,8 @@ class Main {
 
     Person paul = new Person("Paul", 29);
     System.out.println(paul);
+    paul.growOlder(10);
+    System.out.println(paul);
 
     
 
