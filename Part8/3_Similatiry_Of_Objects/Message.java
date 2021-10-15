@@ -18,8 +18,8 @@ public class Message {
     Message mms = new Message("MMS");
     Message moreSms = sms;
 
-    System.out.println(sms == sms);      // prints true
-    System.out.println(sms == mms );      // prints false
+    System.out.println(sms.equals(sms));      // prints true
+    System.out.println(sms.equals(mms));      // prints false
   
     ArrayList<Message> messages = new ArrayList<>();
     if (!messages.contains(sms)) {
@@ -45,16 +45,16 @@ public class Message {
     System.out.println(moreSms);              // prints Message@7fbe847c (Reference)
     System.out.println(moreSms == sms);       // prints false. Different references. Message@7fbe847c == Message@6996db8 
     System.out.println(moreSms.equals(sms));  // prints false
-
-    // System.out.println(sms.equals(new Message("SMS"))); // false
-    System.out.println(sms.toString().equals(moreSms.toString())); // false
+    
+    System.out.println(sms.equals(moreSms));  // false
+    System.out.println(sms.toString().equals(moreSms.toString())); // true
 
     // System.out.println(new Message("LMAO"));
     // System.out.println(sms);
 
     String s1 = new String("YOO");
     String s2 = new String("YOO");
-    String s3 = "YOO"; // gets stored in the String Pool.
-    System.out.println(s1 == s2); // prints false. 2 new references are created in the Heap
+    String s3 = "YOO";                        // gets stored in the String Pool.
+    System.out.println(s1 == s2);             // prints false. 2 new references are created in the Heap
   }
 }
