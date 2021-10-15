@@ -6,8 +6,9 @@ public class Person {
     private int weight;
 
     /*
-      [+] Constructor Overloading [+]       - Our constructor sets the valaue of the instance variable "age" to 0.
+      [+] Constructor Overloading [+]       
 
+       - Our constructor sets the valaue of the instance variable "age" to 0.
        - We would also like to be able to create persons so that the constructor is provided
         both the age as well as the name a parameters
        - This is possible since a class may have multiple constructors.

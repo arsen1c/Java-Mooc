@@ -29,16 +29,17 @@ public class Engine extends Part {
   private String engineType;
 
   public Engine(String engineType, String identifier, String manufacturer, String description) {
-    // calling super();
+    // calling super() and passing the arguments identifier, manufacturer and description to it.
     super(identifier, manufacturer, description);
     this.engineType = engineType;
   }
 
+  // custom method for "Engine" class
   public String getEngineType() {
     return this.engineType;
   }
 
-  // Overriding the about method from the Part class
+  // Overriding the about method of the "Part" class
   public void about () {
     System.out.println("I am an Engine!");
   }

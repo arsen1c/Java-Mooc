@@ -13,13 +13,13 @@ class Main {
     System.out.println(luke); // Name@4aa298b7
 
     /*
-      - When we call "System.out.println()", it prints the valeu of the variable.
+      - When we call "System.out.println()", it prints the value of the variable.
       - The value of a primitive variable is concerete, whereas the value of the reference variable is a
         reference.
       
       - When we attempt to print the value of a rerefence variable, the output contains the type of the variable
         and an identifier created for it by Java.
-      - Name@4aa298b7 -> Type@Identifier
+      - Output: Name@4aa298b7 -> Type@Identifier
 
 
       [+] Primitive Variables [+]
@@ -44,8 +44,14 @@ class Main {
     int second = first;
     int third = second;
 
+    /*
+      - int first = 10 -> reserves a location called "first" and assign value 10
+      - int second = first -> reserves a location called "second" and copies into the value of "first"
+      - int third = second -> reserves a location called "third" and copies the value of "second"
+    */
+
     System.out.println(first + " " + second + " " + third); // 10 10 10
-    second = 5;
+    second = 5; // assigns the value 5 to the variable "second"
     System.out.println(first + " " + second + " " + third); // 10 5 10
 
     /*
