@@ -16,39 +16,26 @@
 import java.util.Arrays;  
 
 public class ReverseArray {
-  protected int arrayLength;
-  protected int[] arr = new int[arrayLength];
-  
-  // constructor
-  public ReverseArray(int[] arr, int n) {
-    this.arr = arr;
-    this.arrayLength = n;
-  }
-
-  public int[] reverse() {
+  public static int[] reverse(int[] arr, int n) {
     // temporary array of same length
-    int[] reversedArray = new int[this.arrayLength];
+    int[] reversedArray = new int[n];
 
-    for (int x = 0; x < this.arrayLength; x++) {
+    for (int x = 0; x < n; x++) {
       // fill the temp array from the end with the current item of the main array
-      reversedArray[this.arrayLength-x-1] = this.arr[x];
+      reversedArray[n-x-1] = arr[x];
     }
 
     return reversedArray;
-  }
-
-  public String toString() {
-    return Arrays.toString(this.arr);
   }
 
   public static void main(String[] args) {
     int[] nums = {1,2,3};
     int n = nums.length;
 
-    ReverseArray array = new ReverseArray(nums, n);
+    // ReverseArray array = new ReverseArray(nums, n);
 
-    System.out.println("Before reverse: " + array);
-    int[] reversed = array.reverse();
+    System.out.println("Before reverse: " + Arrays.toString(nums));
+    int[] reversed = reverse(nums, n);
     System.out.println("After reverse: " + Arrays.toString(reversed));
   }
 }
