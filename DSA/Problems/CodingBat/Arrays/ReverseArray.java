@@ -11,6 +11,9 @@
   reverse3([1, 2, 3]) → [3, 2, 1]
   reverse3([5, 11, 9]) → [9, 11, 5]
   reverse3([7, 0, 0]) → [0, 0, 7]
+
+  Solution Reference:
+    - https://www.geeksforgeeks.org/reverse-an-array-in-java/
 */
 
 import java.util.Arrays;  
@@ -28,14 +31,27 @@ public class ReverseArray {
     return reversedArray;
   }
 
+  public static int[] reverseInPlace(int[] arr, int n) {
+    int i, temp;
+
+    for (i = 0; i < n/2; i++) {
+      temp = arr[i]; // current element in array
+      arr[i] = arr[n-i-1]; // sent current element as the last element of array
+      arr[n-i-1] = temp;
+    }
+    return arr;
+  }
+
   public static void main(String[] args) {
     int[] nums = {1,2,3};
     int n = nums.length;
 
-    // ReverseArray array = new ReverseArray(nums, n);
-
     System.out.println("Before reverse: " + Arrays.toString(nums));
-    int[] reversed = reverse(nums, n);
-    System.out.println("After reverse: " + Arrays.toString(reversed));
+    nums = reverse(nums, n);
+    System.out.println("After reverse: " + Arrays.toString(nums));
+
+    // Reverse the reverse
+    nums = reverseInPlace(nums, n);
+    System.out.println("Reverse reverse: " + Arrays.toString(nums));
   }
 }
