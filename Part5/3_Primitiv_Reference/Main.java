@@ -2,7 +2,7 @@
 
 class Main {
   public static void main(String[] args) {
-    // primitive "int" variable and the number 10 is store as its value.0
+    // primitive "int" variable "value". the number 10 is store as its value.
     int value = 10;
     System.out.println(value); // prints 10
 
@@ -53,20 +53,5 @@ class Main {
     System.out.println(first + " " + second + " " + third); // 10 10 10
     second = 5; // assigns the value 5 to the variable "second"
     System.out.println(first + " " + second + " " + third); // 10 5 10
-
-    /*
-      - The name of the variable tells the memory location where its value is stored.
-      - When you assign a value to a primitve variable with a equility sign, the value on the right
-        side is copied to the memory location indicated by thename of the variable.
-
-      - the "int first = 10" reserves a location called "first" for the variable and then copies the
-        value "10" into it.
-
-      - Similarly "int second = first" reserves a location in memory called "second" for the variable 
-        being created and then copies into it the values stored in the location of variable "first" &first
-    
-      
-
-    */
   }
 }
