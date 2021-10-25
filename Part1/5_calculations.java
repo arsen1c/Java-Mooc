@@ -10,7 +10,6 @@
 */
 
 class Main {
-
   public static int secondsInADay(int sec) {
     return sec * 24 * 60 * 60;
   }

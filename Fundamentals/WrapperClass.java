@@ -17,7 +17,6 @@ class WrapperClass {
     int j = jj.intValue();          // Unboxing
     int k = jj;                     // AutoUnboxing
 
-
     // Where to use Wrapper class Integer
     ArrayList<Integer> values = new ArrayList<Integer>();
     values.add(4);

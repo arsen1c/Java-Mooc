@@ -1,9 +1,9 @@
-public class Engine extends Part {
-  /*
+/*
     - This class definition "public class Engine extends Part" indicated that class
       "Engine" inherits the functionality of the class "Part".
 
-    - Super keyword: calls the constructor of "Part" class.
+    - Super keyword: calls the constructor of "Part" class. 
+      - Note: If we dont call the super() keyword explicitly, the compile will automatically call the default constuctor of the super class
     - Object variables defined in the superclass are initiated with their initial values.
 
     - "super" is kind of similar to "this".
@@ -26,10 +26,11 @@ public class Engine extends Part {
       to everything else, we can use the access modifier "protected" to achieve this.
   */ 
 
+public class Engine extends Part {
   private String engineType;
 
   public Engine(String engineType, String identifier, String manufacturer, String description) {
-    // calling super() and passing the arguments identifier, manufacturer and description to it.
+    // calling constructor of superclass (super()) and passing the arguments identifier, manufacturer and description to it.
     super(identifier, manufacturer, description);
     this.engineType = engineType;
   }
@@ -39,7 +40,8 @@ public class Engine extends Part {
     return this.engineType;
   }
 
-  // Overriding the about method of the "Part" class
+  // Overriding the about method of the "Part" class. Warns at compile time rather than causing logical error.
+  @Override
   public void about () {
     System.out.println("I am an Engine!");
   }

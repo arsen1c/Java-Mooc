@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Problem link: https://codeforces.com/problemset/problem/4/A
+
 public class WaterMelon {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in); 

@@ -3,12 +3,14 @@ public class Part {
   private String manufacturer;
   private String description;
 
+  // Default constructor
   public Part(String identifier, String manufacturer, String description) {
     this.identifier = identifier;
     this.manufacturer = manufacturer;
     this.description = description;
   }
 
+  // Getters  
   public String getIdentifier() {
     return this.identifier;
   }

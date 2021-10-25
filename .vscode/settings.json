@@ -1,0 +1,10 @@
+{
+  "java.project.sourcePaths": [
+    "Fundamentals/Interfaces",
+    "Fundamentals/Collection_And_Generics",
+    "Fundamentals/Abstract",
+    "DSA/Problems/CodingBat/Arrays",
+    "DSA/Problems/CodeForces",
+    "DSA/Problems/LeetCode/Arrays/Easy"
+  ]
+}

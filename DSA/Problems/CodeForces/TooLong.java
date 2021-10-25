@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Problem link: https://codeforces.com/problemset/problem/71/A
+
 public class TooLong {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
