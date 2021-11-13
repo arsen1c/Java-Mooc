@@ -9,6 +9,7 @@ public class Abstract {
     obj.dance();
     obj.cook();
 
+
     Iphone phoneObj = new Iphone();
     SamsungS4 phoneObj1 = new SamsungS4();
     show(phoneObj1);

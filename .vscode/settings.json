@@ -1,10 +1,14 @@
 {
   "java.project.sourcePaths": [
+    "Testing",
+    "Fundamentals/MultiThreading",
     "Fundamentals/Interfaces",
     "Fundamentals/Collection_And_Generics",
     "Fundamentals/Abstract",
+    "Fundamentals/netjstech",
+    "DSA/Problems/LeetCode/Arrays/Easy",
     "DSA/Problems/CodingBat/Arrays",
     "DSA/Problems/CodeForces",
-    "DSA/Problems/LeetCode/Arrays/Easy"
+    "DSA/Stack"
   ]
 }
