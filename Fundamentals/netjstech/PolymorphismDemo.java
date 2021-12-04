@@ -4,6 +4,8 @@ public class PolymorphismDemo {
     Square square = new Square(5.0);
     Circle circle = new Circle(5.0);
 
+    // Test
+
     // Shape dynamically bound to the Square object referenced by square
     shape = square;
     // area method of square called
