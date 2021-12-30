@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA/Problems/CodingBat/CodingBat.iml" filepath="$PROJECT_DIR$/DSA/Problems/CodingBat/CodingBat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/DSA.iml" filepath="$PROJECT_DIR$/DSA/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/Problems/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/DSA/Problems/LeetCode/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MOOC.iml" filepath="$PROJECT_DIR$/MOOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Part4/Part4.iml" filepath="$PROJECT_DIR$/Part4/Part4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Part5/Part5.iml" filepath="$PROJECT_DIR$/Part5/Part5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Part8/Part8.iml" filepath="$PROJECT_DIR$/Part8/Part8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Part9/Part9.iml" filepath="$PROJECT_DIR$/Part9/Part9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/Problems/Problems.iml" filepath="$PROJECT_DIR$/DSA/Problems/Problems.iml" />
+    </modules>
+  </component>
+</project>
